@@ -6,10 +6,153 @@
         <title>CV</title>
         <link rel="stylesheet" href="styles.css">
     </head>
+    
     <body>
-        {
-            let cvs = axios.get()
-        }
-        <h1></h1>
+        <script>
+            let dark =false
+        </script>
+
+        <div class="print-area">
+
+            <div class="header">
+                <img src="https://media.licdn.com/dms/image/C4D03AQHMjXoBD-ZtQQ/profile-displayphoto-shrink_400_400/0/1615838706811?e=1679529600&v=beta&t=9dDAYmTome8BVpKA0RWgD8UraGF0HoJjmhJBdA9-8Yc">
+                <div class="header-text">
+                    <h1>Ignacio Olivera</h1>
+                    <p>Fullstack Developer | Web Designer</p>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="left-area">
+                    <div class="contact">
+                        <h1>Contact</h1>
+                        <h5>Address</h5>
+                        <p>Córdoba, Argentina</p>
+                        <br>
+                        <h5>Email</h5>
+                        <p>Oliveraignacio02@gmail.com</p>
+                        <br>
+                        <h5>Phone</h5>
+                        <p>+54 9 351-336-1192</p>
+                        
+                        <div class="links">
+                            <a href="https://www.linkedin.com/in/ignacio-olivera-3942461a2/">
+                                <img src="https://cdn-icons-png.flaticon.com/512/61/61109.png?w=360" width="20px" height="auto">
+                            </a>
+                            
+                            <a href="https://github.com/OliveraIgnacio">
+                                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="20px" height="auto">
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="skills">
+                        <h1>Skills</h1>
+                        <div class="bars">
+                            <div class="bar">
+                                <p>JavaScript</p>
+                            </div>
+
+                            <div class="bar">
+                                <p>React</p>
+                            </div>
+
+                            <div class="bar">
+                                <p>Redux</p>
+                            </div>
+                            
+                            <div class="bar">
+                                <p>Node.js</p>
+                            </div>
+                            
+                            <div class="bar">
+                                <p>Express</p>
+                            </div>
+                            
+                            <div class="bar">
+                                <p>Sequalize</p>
+                            </div>
+                            
+                            <div class="bar">
+                                <p>HTML/CSS</p>
+                            </div>
+                            
+                            <div class="bar">
+                                <p>ESC6</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="language">
+                        <h1>Language</h1>
+                        <h5>Spanish</h5>
+                        <p>Native</p>
+                        <br>
+                        <h5>English</h5>
+                        <p>B2 Intermediate</p>
+                        <br>
+                    </div>
+
+                </div>
+                <div class="right-area">
+                    <div class="work">
+                        <h1>Experience</h1>
+                        <div class="work-group">
+                            <h3>Fullstack Developer</h3>
+                            <h4>Freelance</h4>
+                            <span>May 2022 - Present</span>
+                        </div>
+                        <div class="work-group">
+                            <h3>Frontend Developer</h3>
+                            <h4>Tecnologias e Inversiones S.A</h4>
+                            <span>Sep 21 - Apr 22</span>
+                        </div>
+                    </div>
+
+                    <div class="education">
+                        <h1>Formation</h1>
+                        <div class="edu-group">
+                            <h3>System Engineering</h3>
+                            <h4>UTN-FRC</h4>
+                            <span>In Progress</span>
+                        </div>
+                        <div class="edu-group">
+                            <h3>FullStack Developer</h3>
+                            <h4>Henry Bootcamp</h4>
+                            <p>+800 hours of theoretical-practical course. <br>
+                                Frontend | Backend | DataBase.</p>
+                            <span>2021-2022</span>
+                        </div>
+                        <div class="edu-group">
+                            <h3>Network and Switch CCNA1</h3>
+                            <h4>Cisco Networking Academy</h4>
+                            <span>2020</span>
+                        </div>
+                    </div>
+
+                    <div class="projects">
+                        <h1>Projects</h1>
+                        <div class="project">
+                            <h3>E-Commerce 'Sneakers'</h3>
+                            <br>
+                            <p>Development of basic e-commerce features. <br>
+                                - Payment gateway integration.<br>
+                                - Sending transactional emails<br>
+                                -Shopping cart and product order management,<br>
+                                -User administration, key management.<p>
+                            <br>
+                            <h5>React-Redux, Mongo DB, Node.js.</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button>Dark Mode</button>
+        <script>
+            let btn = document.querySelector("button");
+            btn.onclick(() => dark?false:true)
+        </script>
     </body>
 </html>
+
