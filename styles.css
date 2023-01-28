@@ -5,12 +5,12 @@
     font-family: sans-serif;
 }
 
-.print-area{
+#print-area{
     width: 80%;
     margin: 20px auto;
 }
 
-.print-area .header{
+#print-area #header{
     width: 100%;
     height: 150px;
     background-color: rgb(50, 175, 178);
@@ -19,7 +19,7 @@
     position: relative;
 }
 
-.header img{
+#header img{
     width: 200px;
     height: 200px;
     border-radius: 50px;
@@ -30,139 +30,144 @@
     box-shadow: 3px 3px 10px gray;
 }
 
-.header-text{
+#header-text{
     color: white;
     width: 60%;
     margin-left: auto;
 }
 
-.header-text h1{
+#header-text h1{
     font-size: 80px;
     font-weight: normal;
 }
 
-.header-text p{
+#header-text p{
     font-size: 20px;
     color: lightgray;
 }
 
-.content{
+#content{
     display: flex;
     flex-wrap: wrap;
 }
 
-.left-area{
+#left-area{
     width: 30%;
     background-color: lightgray;
     text-align: center;
 }
 
-.left-area .contact{
+#left-area #contact{
     margin-top: 130px;
     padding: 0 30px;
 }
 
 
-.contact h1{
+#contact h1{
     font-size: 30px;
     font-weight: normal;
     margin: 15px 0;
 }
 
-.contact h5{
+#contact h5{
     font-size: 18px;
     color:rgb(50, 175, 178)
 }
 
-.contact p{
+#contact p{
     font-size: 17px; 
 }
 
-.links {
+#links {
     margin: 20px 0;
 }
 
-.links a{
+#links a{
     margin: 5px;
 }
 
-.skills{
+#skills{
     margin-top: 30px;
 }
 
-.skills h1{
+#skills h1{
     font-size: 30px;;
     font-weight: normal;
 }
 
-.bars{
+#bars{
     margin-top: 30px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px 10px;
 }
 
-.bars .bar p{
+#bars .bar p{
     font-size: 15px;
 }
 
-.language{
+#language{
     margin-top: 30px;
 }
 
-.language h1{
+#language h1{
     font-size: 30px;
     font-weight: normal;
     margin: 15px 0;
 }
 
-.language h5{
+#language h5{
     font-size: 18px;
     color:rgb(50, 175, 178)
 }
 
 
-.right-area{
+#right-area{
     width: 70%;
     padding: 50px;
     background-color: lightgrey;
     border-left: 2px solid rgb(50, 175, 178);
 }
 
-.right-area h1{
+#right-area h1{
     font-size: 30px;
     font-weight: normal;
 }
-
-.work .work-group{
+#work{
+    display: none;
+}
+#work #work-group{
     position: relative;
 }
 
-.work-group{
+#work-group{
     margin: 20px 0;
 }
 
-.work-group h3{
+#work-group h3{
     font-size: 22px;
     font-weight: normal;
     padding-left: 70px;
     color: rgb(50, 175, 178);
 }
 
-.work-group h4{
+#work-group h4{
     font-size: 18px;
     padding-left: 70px;
     font-weight: normal;
 }
 
-.work-group span{
+#work-group span{
     position: absolute;
     top: 10px;
     right: 0;
 }
 
+#education {
+    display: none;
+}
 
-.education .edu-group{
+#education .edu-group{
     position: relative;
 }
 
@@ -194,9 +199,14 @@
     right: 0;
 }
 
-.projects .project{
+#projects{
+    display: none;
+}
+
+#projects .project{
     position: relative;
 }
+
 
 .project{
     margin: 20px 0;
@@ -221,9 +231,9 @@
 }
 
 button{
-    font-size: 25px;
-    padding: 10px 20px;
-    margin: 50px 0 50px 200px;
+    font-size: 15px;
+    padding: 10px 10px;
+    margin: 10px 400px 10px 0;
     border: none;
     outline: none;
     color: white;
